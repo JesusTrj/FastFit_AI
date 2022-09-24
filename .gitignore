@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Environment
+FastFit_AI_env/
+
+# Large files
+Dataset/
+Development/stage-1_resnet34.pkl
