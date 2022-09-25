@@ -23,5 +23,6 @@ Next Steps:
 * Model Optimization with bigger batch sizes (actually limited by hardware)
 * Business model integration to social functions
 * Web Backend connection with data backend
+* Fuzzy Logic for garment color extraction and combination
 
 Los Pollos Hermanos. 2022
