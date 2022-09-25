@@ -19,8 +19,8 @@ create table Garments (
 garment_ID int AUTO_INCREMENT  primary key,
 user_ID int not null,
 img_path varchar(255) not null,
-garment_type int,      /*blouse, tshirt, dress, short, etc*/
-garment_category int,  /*top or bottom*/
+garment_type varchar(255),      /*blouse, tshirt, dress, short, etc*/
+garment_category int,  /*top, bottom, shoes*/
 formality int,         /*sport, casual, formal*/
 weather int,           /*sunny, cold, rainny*/
 foreign key (user_ID) references Users(user_ID)
