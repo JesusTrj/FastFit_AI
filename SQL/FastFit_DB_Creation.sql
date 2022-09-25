@@ -29,6 +29,9 @@ foreign key (user_ID) references Users(user_ID)
 create table Outfit (
 outfit_ID int AUTO_INCREMENT  primary key,
 user_ID int,
+top_path varchar(1000),    
+bottom_path varchar(1000),    
+shoes_path varchar(1000),    
 outfit_path varchar(1000),    
 formality int,
 weather int,
@@ -39,5 +42,6 @@ model_rate float,  /*preferably not used in training models*/
 title varchar(255),
 fecha varchar(255),
 descr varchar(255),
-foreign key (user_ID) references Users(user_ID)
+foreign key (user_ID) references Users(user_ID),
+UNIQUE KEY `thekey` (`top_path`,`bottom_path`,`shoes_path`)
 );
