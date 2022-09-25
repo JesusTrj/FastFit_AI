@@ -17,5 +17,11 @@ Project developed in following systems:
   
 Process
 ![FastFit_AI](https://user-images.githubusercontent.com/69176699/192154439-fb70ec00-1c75-4f49-a161-bc362d6da557.png)
-    
+
+Next Steps:
+* Infrastructure integration with Cloud Services
+* Model Optimization with bigger batch sizes (actually limited by hardware)
+* Business model integration to social functions
+* Web Backend connection with data backend
+
 Los Pollos Hermanos. 2022
