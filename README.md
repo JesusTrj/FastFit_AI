@@ -9,6 +9,7 @@ Developed a web application for outfit generation, using following technologies:
 * Frontend: Angular; Backend: NodeExpress
 * Data Backend: Python
 * DB: MySQL
+* UI/UX Design: Adobe XD
 
 Project developed in following systems:
 * WSL
