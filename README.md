@@ -13,4 +13,5 @@ Developed a web application for outfit generation, using following technologies:
 Project developed in following systems:
 * WSL
 * Windows
-
+  
+Los Pollos Hermanos. 2022
