@@ -44,3 +44,11 @@ fecha varchar(255),
 descr varchar(255),
 foreign key (user_ID) references Users(user_ID)
 );
+
+create table Favorite (
+favorite_ID int AUTO_INCREMENT  primary key,
+user_ID int not null,
+outfit_ID int not null,
+foreign key (user_ID) references Users(user_ID)
+foreign key (outfit_ID) references Outfit(outfit_ID)
+);
