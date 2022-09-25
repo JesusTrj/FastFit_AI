@@ -2,7 +2,7 @@ from multiprocessing import cpu_count, freeze_support
 
 import uvicorn
 
-def start_server(host="172.17.196.221",
+def start_server(host="localhost",
                  port=80,
                  num_workers=4,
                  loop="asyncio",
