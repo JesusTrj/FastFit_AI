@@ -15,4 +15,7 @@ Project developed in following systems:
 * WSL
 * Windows
   
+Process
+https://github.com/JesusTrj/FastFit_AI/blob/main/Design/FastFit_AI.png
+    
 Los Pollos Hermanos. 2022
