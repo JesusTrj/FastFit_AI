@@ -16,6 +16,6 @@ Project developed in following systems:
 * Windows
   
 Process
-https://github.com/JesusTrj/FastFit_AI/blob/main/Design/FastFit_AI.png
+![FastFit_AI](https://user-images.githubusercontent.com/69176699/192154439-fb70ec00-1c75-4f49-a161-bc362d6da557.png)
     
 Los Pollos Hermanos. 2022
