@@ -7,29 +7,32 @@ drop table if exists Garments;
 drop table if exists Outfit;
 
 create table Users (
-ID int AUTO_INCREMENT  primary key,
+user_ID int AUTO_INCREMENT  primary key,
 Users_Name varchar(255),
 Last_Name varchar(255),
-Email varchar(255)
+Email varchar(255),
+UNIQUE (Email)
 );
 
+
 create table Garments (
-ID int AUTO_INCREMENT  primary key,
+garment_ID int AUTO_INCREMENT  primary key,
 user_ID int not null,
 img_path varchar(255) not null,
 garment_type int,      /*blouse, tshirt, dress, short, etc*/
 garment_category int,  /*top or bottom*/
 formality int,         /*sport, casual, formal*/
 weather int,           /*sunny, cold, rainny*/
-foreign key (user_ID) references Users(ID)
+foreign key (user_ID) references Users(user_ID)
 );
 
 create table Outfit (
-ID int AUTO_INCREMENT  primary key,
+outfit_ID int AUTO_INCREMENT  primary key,
 user_ID int,
-top_ID int,  
-bottom_ID int,  
-shoes_ID int,  
+top_path varchar(1000),  
+bottom_path varchar(1000),  
+shoes_path varchar(1000),
+outfit_path varchar(1000),    
 formality int,
 weather int,
 color float,
@@ -38,5 +41,6 @@ user_rate float,
 model_rate float,  /*preferably not used in training models*/
 title varchar(255),
 fecha varchar(255),
-descr varchar(255)
+descr varchar(255),
+foreign key (user_ID) references Users(user_ID)
 );
