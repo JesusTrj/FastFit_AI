@@ -18,9 +18,9 @@ UNIQUE (Email)
 create table Garments (
 garment_ID int AUTO_INCREMENT  primary key,
 user_ID int not null,
-img_path varchar(255) not null,
-garment_type int,      /*blouse, tshirt, dress, short, etc*/
-garment_category int,  /*top or bottom*/
+img_path varchar(1000) not null,
+garment_type varchar(255),      /*blouse, tshirt, dress, short, etc*/
+garment_category int,  /*top, bottom, shoes*/
 formality int,         /*sport, casual, formal*/
 weather int,           /*sunny, cold, rainny*/
 foreign key (user_ID) references Users(user_ID)
@@ -29,9 +29,6 @@ foreign key (user_ID) references Users(user_ID)
 create table Outfit (
 outfit_ID int AUTO_INCREMENT  primary key,
 user_ID int,
-top_path varchar(1000),  
-bottom_path varchar(1000),  
-shoes_path varchar(1000),
 outfit_path varchar(1000),    
 formality int,
 weather int,
@@ -43,12 +40,4 @@ title varchar(255),
 fecha varchar(255),
 descr varchar(255),
 foreign key (user_ID) references Users(user_ID)
-);
-
-create table Favorite (
-favorite_ID int AUTO_INCREMENT  primary key,
-user_ID int not null,
-outfit_ID int not null,
-foreign key (user_ID) references Users(user_ID),
-foreign key (outfit_ID) references Outfit(outfit_ID)
 );
